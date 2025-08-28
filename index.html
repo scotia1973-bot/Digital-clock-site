@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online Digital Clock</title>
-  
-  
-  
+  <!-- Google AdSense verification code -->
+  <!-- This script enables Google AdSense and verifies site ownership. -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8196316762675719" crossorigin="anonymous"></script>
   <style>
     /* Reset some default margins */
     body, h1, h2, p, label { margin: 0; padding: 0; }
@@ -33,7 +32,6 @@
     h1 {
       font-size: 2rem;
       margin-bottom: 0.5rem;
- 
     }
     #clock {
       font-size: 5rem;
@@ -73,7 +71,6 @@
       border: 2px dashed #ccc;
       border-radius: 4px;
       padding: 1rem;
-
       max-width: 728px;
       margin: 0 auto;
       color: #777;
@@ -87,11 +84,10 @@
       #date {
         font-size: 1.2rem;
       }
-   }
+    }
   </style>
 </head>
-
-  body>
+<body>
   <header>
     <h1>Online Digital Clock</h1>
     <p>Keep track of the current time wherever you are.</p>
@@ -159,11 +155,9 @@
 
         if (!toggle24h.checked) {
           ampm = hours >= 12 ? ' PM' : ' AM';
-          
           hours = hours % 12;
           hours = hours ? hours : 12; // the hour '0' should be '12'
         }
-
         clockEl.textContent = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}${toggle24h.checked ? '' : ampm}`;
 
         if (toggleDate.checked) {
